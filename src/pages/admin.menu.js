@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AddMenuModal from "../components/addMenuModal";
+import axios from "axios";
 
 export default function AdminMenu() {
     const [data, setData] = useState([]);
@@ -8,10 +9,10 @@ export default function AdminMenu() {
     const [modal, setModal] = useState(false);
 
     useEffect(() => {
-        fetchGet();
+        getMenuData();
     }, []);
 
-    function fetchGet() {
+    function getMenuData() {
         fetch("http://localhost:8000/api/menu")
             .then((response) => response.json())
             .then((dt) => {
@@ -19,6 +20,12 @@ export default function AdminMenu() {
             })
             .catch((err) => setError(err))
             .finally(() => setLoading(false));
+    }
+
+    function deleteMenuData(id) {
+        axios.delete(`http://localhost:8000/api/menu?id=${id}`).then((res) => {
+            setData(res);
+        });
     }
 
     return (
@@ -65,14 +72,15 @@ export default function AdminMenu() {
                                     <button
                                         type="button"
                                         class="btn btn-danger"
+                                        onClick={() => deleteMenuData(e.id)}
                                     >
-                                        Danger
+                                        Delete
                                     </button>
                                     <button
                                         type="button"
                                         class="btn btn-warning"
                                     >
-                                        Warning
+                                        Edit
                                     </button>
                                 </td>
                             </tr>
