@@ -34,6 +34,16 @@ export default function AdminProducts() {
         />
         <input
           class="form-control addMenuModalInput"
+          type="text"
+          placeholder="Price"
+          aria-label="default input example"
+          value={productItem.price}
+          onChange={(e) => {
+            setProductItem({ ...productItem, price: e.target.value });
+          }}
+        />
+        <input
+          class="form-control addMenuModalInput"
           type="file"
           placeholder="Position"
           aria-label="default input example"
