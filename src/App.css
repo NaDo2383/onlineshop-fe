@@ -3,22 +3,35 @@
     padding: 40px;
     position: absolute;
     width: 70%;
-    background-color:rgb(203, 203, 203);
+    background-color: rgb(203, 203, 203);
     border-radius: 30px;
     display: flex;
 }
 
 .addMenuModalInput {
-    width: 60%; 
-    margin: 0 auto;  
+    width: 60%;
+    margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .addMenuModalBtns {
-   margin: 0 auto;
-   padding-top: 30px;
-   display: flex;
-   justify-content: center;
-   gap: 50px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.addMenuModalCheckbox {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-checkboxes {
+    width: 30%;
 }
