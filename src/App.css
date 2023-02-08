@@ -1,37 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.flex {
+  display: flex;
+}
+.flex-d {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.align-items {
+  align-items: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+.justify-content {
+  justify-content: center;
+}
+.space-around {
+  justify-content: space-around;
+}
+.space-between {
+  justify-content: space-between;
+}
+.textCategory {
+  color: #ffb23f;
+}
+
+.Container {
+  width: 1240px;
+}
+
+.containerTitle {
+  height: 300px;
+  margin-bottom: 50px;
+}
+.bigTitle {
+  width: 750px;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+}
+
+.bigText {
+  width: 800px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #afadb5;
+  margin-top: 20px;
+}
+
+.productCard {
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.input {
+  width: 1080px;
+  height: 50px;
+  font-size: 45px;
+  position: absolute;
+  top: 42%;
+  left: 30%;
+}
+
+.input input {
+  width: 200px;
+  height: 50px;
+  font-size: 40px;
+}
+
+.landingPage {
+  position: relative;
+  margin-bottom: 180px;
+}
+
 #addMenuModal {
-    border: 3px solid grey;
-    padding: 40px;
-    position: absolute;
-    width: 70%;
-    background-color: rgb(203, 203, 203);
-    border-radius: 30px;
-    display: flex;
+  border: 3px solid grey;
+  padding: 40px;
+  position: absolute;
+  width: 70%;
+  background-color: rgb(203, 203, 203);
+  border-radius: 30px;
+  display: flex;
 }
 
 .addMenuModalInput {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .addMenuModalBtns {
-    margin: 0 auto;
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
 .addMenuModalCheckbox {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .modal-checkboxes {
-    width: 30%;
+  width: 30%;
 }

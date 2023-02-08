@@ -1,0 +1,69 @@
+.flex {
+  display: flex;
+}
+.flex-d {
+  flex-direction: column;
+}
+.align-items {
+  align-items: center;
+}
+.justify-content {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+
+.benefitsCategory {
+  color: #ffb23f;
+}
+
+.benefitsText {
+  color: #afadb5;
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+}
+
+.benefits {
+  padding: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+}
+
+.benefits img {
+  width: 62px;
+}
+
+.benefits-card-header {
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+#benefets-head {
+  gap: 300px;
+  margin-bottom: 50px;
+}
+
+#benefets-head-header {
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+}
+
+#benefets-head-header-container {
+  width: 60%;
+}
+
+#benefets-cards {
+  gap: 30px;
+}
