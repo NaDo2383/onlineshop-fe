@@ -28,11 +28,7 @@ function App() {
 
       <Routes>
         <Route path="/admin" element={<Admin />}>
-          <Route
-            index
-            path="/admin/admin.Dashboard"
-            element={<AdminDashboard />}
-          />
+          <Route index path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/admin.Products" element={<AdminProducts />} />
           <Route path="/admin/admin.Users" element={<AdminUsers />} />
           <Route path="/admin/admin.Menu" element={<AdminMenu />} />
