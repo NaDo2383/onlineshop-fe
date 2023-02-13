@@ -1,0 +1,58 @@
+.text-category {
+  color: #ffb23f;
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.our-product-container-1 {
+  row-gap: 50px;
+}
+
+.our-product-container-2 {
+  row-gap: 50px;
+  align-self: flex-end;
+}
+
+#our-product-container-1-header {
+  row-gap: 14px;
+}
+
+#our-products-container {
+  gap: 50px;
+  margin-bottom: 180px;
+}
+
+#our-product-container-1-header,
+h2 {
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+}
+
+.our-product-span-text {
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: #afadb5;
+}
+
+.our-product-span-number {
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  color: #151411;
+}
+
+.tooshuu {
+  gap: 50px;
+  justify-content: flex-end;
+}

@@ -6,7 +6,6 @@ import { NavBar } from "../components";
 export default function Admin() {
   return (
     <div>
-      <NavBar />
       <div className="row">
         <div className="col-3">
           <div className="d-flex flex-column">

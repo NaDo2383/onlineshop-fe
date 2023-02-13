@@ -1,0 +1,28 @@
+.testomonials-header {
+  row-gap: 30px;
+}
+
+.testomonials-header-1 {
+  row-gap: 14px;
+}
+
+.testimonials {
+  row-gap: 50px;
+}
+
+.pidbackCards {
+  gap: 30px;
+  background-color: #f9f9f9;
+  margin-bottom: 180px;
+}
+
+.pidbackCard {
+  background: #ffffff;
+  box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+  padding: 24px;
+  row-gap: 26px;
+}
+
+.pidbackCardImg1 {
+  width: 40px;
+}

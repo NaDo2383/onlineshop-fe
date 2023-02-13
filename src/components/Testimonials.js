@@ -1,4 +1,5 @@
 import { nanoid } from "nanoid";
+import "../style/Testimonials.css";
 import "../App.css";
 
 const testimonials = [
@@ -48,21 +49,33 @@ const testimonials = [
 
 export const Testimonial = () => {
   return (
-    <div className="testimonials">
-      <span>Testimonials</span>
-      <h1>What our customer say</h1>
-      <span>
-        Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim
-        placerat nisi, adipiscing mauris non purus parturient.
-      </span>
-      <div className="pidback">
-        <div className="pidbackCard">
+    <div className="testimonials flex flex-d align-items">
+      <div className="testomonials-header flex flex-d align-items">
+        <div className="testomonials-header-1 flex flex-d align-items">
+          <span className="textCategory">Testimonials</span>
+          <h1>What our customer say</h1>
+        </div>
+        <span>
+          Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim
+          placerat nisi, adipiscing mauris non purus parturient.
+        </span>
+      </div>
+      <div className="pidback ">
+        <div className="pidbackCards flex">
           {testimonials.map((e, index) => (
-            <div key={index}>
-              <img key={e._id} src={e.img} alt="check img" />
+            <div key={index} className="pidbackCard flex flex-d">
+              <img
+                key={e._id}
+                src={e.img}
+                alt="check img"
+                className="pidbackCardImg1"
+              />
               <span>{e.text}</span>
               {e.user.map((avatar, index) => (
-                <div key={index}>
+                <div
+                  key={index}
+                  className="pidbackCardUserInfo flex space-between"
+                >
                   <div>
                     <img
                       key={avatar._id}

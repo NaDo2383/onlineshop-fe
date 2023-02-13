@@ -6,7 +6,7 @@ import AdminProducts from "./pages/admin.products";
 import AdminUsers from "./pages/admin.users";
 import AdminMenu from "./pages/admin.menu";
 import AdminCate from "./pages/admin.cate";
-import { Footer, NavBar, Product } from "./components";
+import { Footer, NavBar } from "./components";
 import { Landing, Products, Services, Article, AboutUs } from "./pages";
 import { useState } from "react";
 
@@ -17,8 +17,8 @@ function App() {
       <NavBar current={current} setCurrent={setCurrent} />
       <Routes>
         <Route exact path="/" element={<Landing />} />
-        <Route path="product/:id" element={<Products />}>
-          <Route path="card" element={<Product />} />
+        <Route path="product/*" element={<Products />}>
+          <Route path="card" element={<Products />} />
         </Route>
         <Route path="services" element={<Services />} />
         <Route path="article" element={<Article />} />
