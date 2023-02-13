@@ -6,34 +6,39 @@ import AdminProducts from "./pages/admin.products";
 import AdminUsers from "./pages/admin.users";
 import AdminMenu from "./pages/admin.menu";
 import AdminCate from "./pages/admin.cate";
-import { Footer, NavBar } from "./components";
+
 import { Landing, Products, Services, Article, AboutUs } from "./pages";
-import { useState } from "react";
+import { RiMailUnreadFill } from "react-icons/ri";
+import Main from "./pages/main";
 
 function App() {
-  const [current, setCurrent] = useState();
   return (
     <div className="Container flex flex-d aling-items justify-content">
-      <NavBar current={current} setCurrent={setCurrent} />
       <Routes>
-        <Route exact path="/" element={<Landing />} />
-        <Route path="product/*" element={<Products />}>
-          <Route path="card" element={<Products />} />
+        <Route exact path="/" element={<Main />}>
+          <Route path="/" element={<Landing />} />
+          <Route path="product/*" element={<Products />}>
+            <Route path="card" element={<Products />} />
+          </Route>
+          <Route path="services" element={<Services />} />
+          <Route path="article" element={<Article />} />
+          <Route path="about-us" element={<AboutUs />} />
         </Route>
-        <Route path="services" element={<Services />} />
-        <Route path="article" element={<Article />} />
-        <Route path="about-us" element={<AboutUs />} />
       </Routes>
+
       <Routes>
         <Route path="/admin" element={<Admin />}>
-          <Route index path="/admin.Dashboard" element={<AdminDashboard />} />
-          <Route path="/admin.Products" element={<AdminProducts />} />
-          <Route path="/admin.Users" element={<AdminUsers />} />
-          <Route path="/admin.Menu" element={<AdminMenu />} />
-          <Route path="/admin.Cate" element={<AdminCate />} />
+          <Route
+            index
+            path="/admin/admin.Dashboard"
+            element={<AdminDashboard />}
+          />
+          <Route path="/admin/admin.Products" element={<AdminProducts />} />
+          <Route path="/admin/admin.Users" element={<AdminUsers />} />
+          <Route path="/admin/admin.Menu" element={<AdminMenu />} />
+          <Route path="/admin/admin.Cate" element={<AdminCate />} />
         </Route>
       </Routes>
-      <Footer />
     </div>
   );
 }
