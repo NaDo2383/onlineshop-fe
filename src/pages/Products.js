@@ -48,7 +48,7 @@ export const Products = () => {
         <img src={require("../assets/page/products/ProductsPage.jpg")} alt="" />
       </>
 
-      <div className="flex" style={{ margin: "15px" }}>
+      <div className="flex align-items" style={{ margin: "15px" }}>
         <div
           className="flex flex-row p-2"
           style={{ backgroundColor: "#f4f4f4" }}
@@ -58,20 +58,14 @@ export const Products = () => {
             placeholder=" Search property"
             style={{ width: "800px", margin: 5 }}
           />
-          <button>Find Now</button>
         </div>
         <button>Filter</button>
       </div>
       <div>
-        {/* <div className="flex justify-between">
-          <div>
-            <h1>Total Product</h1>
-            <span>184</span>
-          </div>
-          <div>
-            <span>Sort By</span>
-          </div>
-        </div> */}
+        <div className="flex justify-between align-items">
+          <h1>Total Product</h1>
+          <span className="totalProductCount">{productData.length}</span>
+        </div>
         <div className="productCard">
           {productData &&
             productData.map((item) => (

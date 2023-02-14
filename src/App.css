@@ -100,6 +100,7 @@ body {
   background-color: rgb(203, 203, 203);
   border-radius: 30px;
   display: flex;
+  z-index: 999999;
 }
 
 .addMenuModalInput {
@@ -128,4 +129,10 @@ body {
 
 .modal-checkboxes {
   width: 30%;
+}
+
+.totalProductCount {
+  padding-left: 20px;
+  font-size: 32px;
+  color: #518581;
 }
