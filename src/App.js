@@ -18,8 +18,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Main />}>
           <Route path="/" element={<Landing />} />
-          <Route path="product/*" element={<Products />} />
-          <Route path="d" element={<ProductDetail />} />
+          <Route path="product" element={<Products />} />
+          {/* <Route path="d" element={<ProductDetail />} /> */}
           <Route path="services" element={<Services />} />
           <Route path="article" element={<Article />} />
           <Route path="about-us" element={<AboutUs />} />

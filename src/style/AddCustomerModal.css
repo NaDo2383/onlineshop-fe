@@ -1,0 +1,26 @@
+.modalBackGround {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  background-color: rgba(255, 255, 255, 0.9);
+  left: 0;
+  top: 0;
+}
+
+.modalBody {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  width: 50vw;
+  height: 50vh;
+  background-color: #efd1a5;
+  padding: 50px;
+  z-index: 999;
+  border-radius: 20px;
+}
+
+input {
+  background-color: white;
+}

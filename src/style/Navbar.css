@@ -19,6 +19,7 @@ nav {
   background-color: whitesmoke;
   height: 100px;
   margin-bottom: 70px;
+  position: relative;
 }
 
 .item {
@@ -29,4 +30,29 @@ nav {
 
 .item-active {
   color: #518581;
+}
+
+.signInBtn {
+  background-color: #518581;
+  color: white;
+  border-color: #518581;
+}
+
+.signInBtn:hover {
+  background-color: #518581;
+  color: white;
+  border-color: black;
+}
+
+.signUpBtn {
+  background-color: #518581;
+  color: white;
+  border-color: #518581;
+  margin: 0 auto;
+}
+
+.signUpBtn:hover {
+  background-color: #518581;
+  color: white;
+  border-color: black;
 }

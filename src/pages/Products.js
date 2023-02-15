@@ -64,7 +64,9 @@ export const Products = () => {
       <div>
         <div className="flex justify-between align-items">
           <h1>Total Product</h1>
-          <span className="totalProductCount">{productData.length}</span>
+          <span className="totalProductCount">
+            {productData ? productData.length : 0}
+          </span>
         </div>
         <div className="productCard">
           {productData &&
