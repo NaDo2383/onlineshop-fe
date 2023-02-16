@@ -59,7 +59,7 @@ export const NavBar = ({ current, setCurrent }) => {
             alt="img"
           />
 
-          <div className={`dropdown-menu ${regModal ? "none" : "show"}`}>
+          <div className={`dropdown-menu ${regModal ? "none" : ""}`}>
             <form class="px-4 py-3">
               <div class="mb-3">
                 <label for="exampleDropdownFormEmail1" class="form-label">
