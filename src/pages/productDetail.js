@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import "../style/ProductDetail.css";
 
 export default function ProductDetail() {
   let { id } = useParams();
@@ -28,16 +29,24 @@ export default function ProductDetail() {
   console.log(productSingleData);
 
   return (
-    <div>
-      <div className="">
+    <div className="productDetailContainer flex align-items">
+      <div className="sliderContainer">
         <ImageGallery items={images} />
       </div>
-      <div>
-        <div>{productSingleData && productSingleData.productName}</div>
-        <div>{productSingleData && productSingleData.description}</div>
-        <div>{productSingleData && productSingleData.price}</div>
-        <div>{productSingleData && productSingleData.quantity}</div>
-        <div>
+      <div className="productDetailContainerRight flex flex-d">
+        <div className="productDetailTitle">
+          {productSingleData && productSingleData.productName}
+        </div>
+        <div className="productDetailDescription">
+          {productSingleData && productSingleData.description}
+        </div>
+        <div className="productDetailPrice">
+          ${productSingleData && productSingleData.price}
+        </div>
+        <div className="productDetailQuantity">
+          {productSingleData && productSingleData.quantity}
+        </div>
+        <div className="buttonContainer flex">
           <button>Buy Now</button>
           <button>Add to Cart</button>
         </div>

@@ -1,0 +1,42 @@
+.productDetailContainer {
+  max-width: 1240px;
+  gap: 60px;
+  height: 750px;
+}
+
+.sliderContainer {
+  width: 50%;
+}
+
+.productDetailContainerRight {
+  height: 70%;
+  justify-content: space-evenly;
+}
+
+.buttonContainer {
+  gap: 20px;
+}
+
+.productDetailTitle {
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  color: #151411;
+}
+
+.productDetailDescription {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: #afadb5;
+}
+
+.productDetailPrice {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  color: #151411;
+}
